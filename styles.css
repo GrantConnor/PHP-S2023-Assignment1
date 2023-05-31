@@ -1,0 +1,128 @@
+html{
+    background-color: rgb(190, 74, 74);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.start-form-button{
+    font-family: fantasy;
+    padding: 20px;
+    margin: 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    color: rgb(49, 110, 25);
+    background-color: rgb(228, 243, 176);
+    transition: transform 0.2s;
+    height: 130px;
+    width: 250px;
+}
+
+.start-form-button:hover{
+    color: rgb(72, 116, 36);
+    background-color: rgb(123, 158, 123);
+    transform: scale(1.1);
+}
+#button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    margin-top: 75px;
+    height: 500px;
+    width: 500px;
+}
+
+footer{
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+}
+
+#form-container{
+    flex-direction: column;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+}
+
+#x{
+    border: solid 1px rgb(34, 34, 34);
+    height: 25px;
+    width: 25px;
+    background-color: rgb(206, 200, 200);
+    color: black;
+    font-size: 0.8em;
+    margin-left: auto;
+}
+
+#x:hover{
+    font-weight: bold;
+}
+
+#x:active{
+    background-color: rgb(77, 75, 78);
+}
+
+#pizza-form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="checkbox"]{
+    margin-right: 5px;
+}
+
+input[type="submit"]{
+    background-color: tomato;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input{
+    float: right;
+}
+
