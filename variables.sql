@@ -7,3 +7,6 @@ CREATE TABLE pizzaOrder(
     toppings boolean not null,
     PRIMARY KEY (id)
 );
+
+/* creates the table with the variables delivery, address, names, size 
+and toppings*/

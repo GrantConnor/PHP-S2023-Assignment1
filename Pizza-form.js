@@ -1,3 +1,5 @@
+
+// javascript that hides and un hides the from
 function showForm() {
     var formContainer = document.getElementById("form-container");
     var overlay = document.getElementById("overlay");

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css>
+    <link rel="stylesheet" href="styles.css">
     <script src="Pizza-form.js"></script>
     <title>Grants Pizza</title>
 </head>
@@ -59,9 +59,10 @@
 
                     <?php
                     require_once ('database.php');
-                    if(isset($_POST) & !empty()($_POST)){
+                    $database = new Database(); // creates a new database
+                    if (isset($_POST) && !empty($_POST)) {
                         $delivery = $_POST['delivery'];
-                        $name = $_POST['name'];
+                        $name = $_POST['names'];
                         $address = $_POST['address'];
                         $size = $_POST['size'];
                         $toppings = $_POST['toppings'];
@@ -81,3 +82,4 @@
 
     <footer>&copy;Grant's Pizza 2023</footer>
 </body>
+</html>

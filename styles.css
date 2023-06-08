@@ -98,6 +98,10 @@ label{
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    text-decoration: underline;
+}
+input[type="radio"]{
+    cursor: pointer;
 }
 
 input[type="text"],
@@ -111,6 +115,7 @@ select{
 
 input[type="checkbox"]{
     margin-right: 5px;
+    cursor: pointer;
 }
 
 input[type="submit"]{
@@ -125,4 +130,20 @@ input[type="submit"]{
 input{
     float: right;
 }
+
+form{
+    width: 500px;
+    height: 500px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(./pizza-background.jpg);
+}
+
+input[type="submit"]{
+    position: absolute;
+    left: 200px;
+    bottom: 100px;
+}
+
+
+
 
